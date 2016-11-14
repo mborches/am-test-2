@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<title>.:: AMIES ::.</title>
+	<meta name="description" content="AMIES">
+	<link rel="stylesheet" href="assets/css/reset.css?v=1.0">
+    <link rel="stylesheet" href="assets/vendor/font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/layout.css?v=1.0">
+	<!--<link rel="stylesheet" href="assets/css/app.css?v=1.0">-->
+	<link rel="stylesheet" href="assets/css/amies-personaje.css?v=1.0">
+</head>
+
+<body>
+	<div id="inicio" class="center">
+		<img class="logo" src="assets/img/logo.png">
+		<h1 onclick="personaje.jugar();">Jugar</h1>
+	</div>		
+	<div id="escenario" class="hidden">
+		<img id="logo_rotando" alt="AMIES" src="assets/img/logo.png">
+		<div id="contenedor_personaje">
+			<img alt="" id="pj_pelu" src="assets/img/nada.png" />
+			<img alt="" id="pj_head" src="assets/img/nada.png" />
+			<img alt="" id="pj_body" src="assets/img/personaje/cuerpo_2.png" />
+		</div>
+		<div class="controlesh" id="op_left">
+			<span class="fa-stack fa-lg hidden-xs">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fa fa-caret-left fa-stack-1x fa-inverse"></i>
+			</span>
+			<img id="img_left" alt="" class="circular--square-verde" src="assets/img/nada.png" />
+		</div>
+		<div class="controlesh" id="op_right">
+			<img id="img_right" alt="" class="circular--square-verde" src="assets/img/nada.png" />
+			<span class="fa-stack fa-lg hidden-xs">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fa fa-caret-right fa-stack-1x fa-inverse"></i>
+			</span>
+		</div>
+		<div id="nav-items-vertical">
+			<div id="txt_opcion" class="">Tipo</div>
+			<span id="tipo_up" class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fa fa-caret-up fa-stack-1x fa-inverse"></i>
+			</span>
+			<img id="img_tipo" alt="" class="circular--square-rosa" src="assets/img/nada.png" />
+			<span id="tipo_down" class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <i class="fa fa-caret-down fa-stack-1x fa-inverse"></i>
+			</span>
+		</div>
+		<span id="bot_inicio" class="fa-stack fa-lg" onclick="personaje.inicio();">
+		  <i class="fa fa-circle fa-stack-2x"></i>
+		  <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+		</span>
+	</div>
+	<script type="text/javascript" src="assets/vendor/jquery/jquery-3.1.1.min.js"></script>	
+	<script type="text/javascript" src="assets/vendor/underscore/underscore-min.js"></script>
+	<script type="text/javascript" src="assets/vendor/amplitude/js/amplitude.min.js"></script>	
+	<script type="text/javascript" src="assets/js/helpers.js"></script>
+	<!--<script type="text/javascript" src="assets/js/app.js"></script>-->
+	<script type="text/javascript" src="assets/js/amies-personaje.js"></script>
+
+</body>
+</html>
