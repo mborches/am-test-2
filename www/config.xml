@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<widget id = "com.plopi.amies" version = "1.0.2">
+<widget xmlns = "http://www.w3.org/ns/widgets" id = "com.plopi.amies" version = "1.0.2">
 
     <name>AMIES</name>
 
